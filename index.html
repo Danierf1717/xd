@@ -1507,69 +1507,196 @@ button:active {
         </div>
     </nav>
 
-    <h2 class="separator">Galería de Personajes</h2>
+    
 
-    <div class="character-gallery">
-        <button id="ButtonIchigo" onclick="showCharacter('Ichigo')">Ichigo Kurosaki</button>
-        <button id="ButtonRukia" onclick="showCharacter('Rukia')">Rukia Kuchiki</button>
-        <button id="ButtonByakuya" onclick="showCharacter('Byakuya')">Byakuya Kuchiki</button>
-        <button id="ButtonRenji" onclick="showCharacter('Renji')">Renji Abarai</button>
-        <button id="ButtonOrihime" onclick="showCharacter('Orihime')">Orihime Inoue</button>
-        <button id="ButtonUryu" onclick="showCharacter('Uryu')">Uryu Ishida</button>
-        <button id="ButtonYoruichi" onclick="showCharacter('Yoruichi')">Yoruichi Shihouin</button>
-        <button id="ButtonAizen" onclick="showCharacter('Aizen')">Sosuke Aizen</button>
+     <h2 class="separator">Galería de Personajes</h2>
+
+    <div class="program">
+        <div class="program__info">
+            <h2 class="program__title">Conoce a los Personajes de Bleach</h2>
+            <p class="program__description">
+                Bleach es una serie llena de personajes memorables, cada uno con su propia historia y habilidades únicas.
+            </p>
+        </div>
+        <div class="program__image">
+            <img src="img/bleach_group.jpg" class="program__image-photo" alt="Personajes de Bleach">
+        </div>
     </div>
 
-    <div id="CardView1" class="card-view" style="display: none;">
-        <h3 id="characterName"></h3>
-        <img id="characterImage" src="" alt="Character Image" style="width: 100%; border-radius: 8px;">
-        <p id="characterDescription"></p>
+    <h2 class="separator">Personajes Destacados</h2>
+
+    <div class="course-list">
+        <div class="course-list__item">
+            <img src="img/ichigo.jpg" class="course-list__item-image" alt="Ichigo Kurosaki">
+            <div class="course-list__item-details">
+                <h3 class="course-list__item-title">Ichigo Kurosaki</h3>
+                <p class="course-list__item-description">El protagonista de la serie, un Shinigami con un fuerte sentido de la justicia.</p>
+            </div>
+            <button class="course-list__item-button" onclick="showCharacter('Ichigo')">Explorar</button>
+        </div>
+        <div class="course-list__item">
+            <img src="img/rukia.jpg" class="course-list__item-image" alt="Rukia Kuchiki">
+            <div class="course-list__item-details">
+                <h3 class="course-list__item-title">Rukia Kuchiki</h3>
+                <p class="course-list__item-description">Una Shinigami que juega un papel crucial en la vida de Ichigo.</p>
+            </div>
+            <button class="course-list__item-button" onclick="showCharacter('Rukia')">Explorar</button>
+        </div>
+        <div class="course-list__item">
+            <img src="img/byakuya.jpg" class="course-list__item-image" alt="Byakuya Kuchiki">
+            <div class="course-list__item-details">
+                <h3 class="course-list__item-title">Byakuya Kuchiki</h3>
+                <p class="course-list__item-description">Capitán de la 6ª División, conocido por su elegancia y habilidades de combate.</p>
+            </div>
+            <button class="course-list__item-button" onclick="showCharacter('Byakuya')">Explorar</button>
+        </div>
+        <div class="course-list__item">
+            <img src="img/renji.jpg" class="course-list__item-image" alt="Renji Abarai">
+            <div class="course-list__item-details">
+                <h3 class="course-list__item-title">Renji Abarai</h3>
+             <p class="course-list__item-description">Un Shinigami de la 6ª División y amigo de Ichigo, conocido por su gran lealtad.</p>
+            </div>
+            <button class="course-list__item-button" onclick="showCharacter('Renji')">Explorar</button>
+        </div>
+        <div class="course-list__item">
+            <img src="img/orihime.jpg" class="course-list__item-image" alt="Orihime Inoue">
+            <div class="course-list__item-details">
+                <h3 class="course-list__item-title">Orihime Inoue</h3>
+                <p class="course-list__item-description">Una amiga de Ichigo con habilidades especiales que la hacen única.</p>
+            </div>
+            <button class="course-list__item-button" onclick="showCharacter('Orihime')">Explorar</button>
+        </div>
+        <div class="course-list__item">
+            <img src="img/uryu.jpg" class="course-list__item-image" alt="Uryu Ishida">
+            <div class="course-list__item-details">
+                <h3 class="course-list__item-title">Uryu Ishida</h3>
+                <p class="course-list__item-description">Un Quincy y rival de Ichigo, conocido por su inteligencia y habilidades de tiro.</p>
+            </div>
+            <button class="course-list__item-button" onclick="showCharacter('Uryu')">Explorar</button>
+        </div>
+        <div class="course-list__item">
+            <img src="img/yoruichi.jpg" class="course-list__item-image" alt="Yoruichi Shihouin">
+            <div class="course-list__item-details">
+                <h3 class="course-list__item-title">Yoruichi Shihouin</h3>
+                <p class="course-list__item-description">Una ex-capitana de la 2ª División, experta en artes marciales y velocidad.</p>
+            </div>
+            <button class="course-list__item-button" onclick="showCharacter('Yoruichi')">Explorar</button>
+        </div>
+        <div class="course-list__item">
+            <img src="img/aizen.jpg" class="course-list__item-image" alt="Sosuke Aizen">
+            <div class="course-list__item-details">
+                <h3 class="course-list__item-title">Sosuke Aizen</h3>
+                <p class="course-list__item-description">El principal antagonista de la serie, conocido por su astucia y poder.</p>
+            </div>
+            <button class="course-list__item-button" onclick="showCharacter('Aizen')">Explorar</button>
+        </div>
     </div>
 
-    <script>
-        function showCharacter(character) {
-            const cardView = document.getElementById('CardView1');
-            const characterName = document.getElementById('characterName');
-            const characterImage = document.getElementById('characterImage');
-            const characterDescription = document.getElementById('characterDescription');
+    <div class="about">
+        <img src="img/bleach_about.jpg" alt="About Image" class="about__image">
+        <div class="about__details">
+            <div class="about__details-title">Sobre Bleach</div>
+            <div class="about__details-description">
+                Bleach es una serie de anime y manga que sigue las aventuras de Ichigo Kurosaki, un joven que se convierte en Shinigami y lucha contra espíritus malignos. La serie es conocida por su rica narrativa y personajes memorables.
+            </div>
+            <button class="about__details-button">Conócenos</button>
+        </div>
+    </div>
 
-            if (character === 'Ichigo') {
-                characterName.innerText = 'Ichigo Kurosaki';
-                characterImage.src = 'img/ichigo.jpg'; // Asegúrate de que la ruta de la imagen sea correcta
-                characterDescription.innerText = 'El protagonista de la serie, un Shinigami con un fuerte sentido de la justicia.';
-            } else if (character === 'Rukia') {
-                characterName.innerText = 'Rukia Kuchiki';
-                characterImage.src = 'img/rukia.jpg'; // Asegúrate de que la ruta de la imagen sea correcta
-                characterDescription.innerText = 'Una Shinigami que juega un papel crucial en la vida de Ichigo.';
-            } else if (character === 'Byakuya') {
-                characterName.innerText = 'Byakuya Kuchiki';
-                characterImage.src = 'img/byakuya.jpg'; // Aseg
-                          } else if (character === 'Renji') {
-                characterName.innerText = 'Renji Abarai';
-                characterImage.src = 'img/renji.jpg'; // Asegúrate de que la ruta de la imagen sea correcta
-                characterDescription.innerText = 'Un Shinigami de la 6ª División y amigo de Ichigo, conocido por su gran lealtad.';
-            } else if (character === 'Orihime') {
-                characterName.innerText = 'Orihime Inoue';
-                characterImage.src = 'img/orihime.jpg'; // Asegúrate de que la ruta de la imagen sea correcta
-                characterDescription.innerText = 'Una amiga de Ichigo con habilidades especiales que la hacen única.';
-            } else if (character === 'Uryu') {
-                characterName.innerText = 'Uryu Ishida';
-                characterImage.src = 'img/uryu.jpg'; // Asegúrate de que la ruta de la imagen sea correcta
-                characterDescription.innerText = 'Un Quincy y rival de Ichigo, conocido por su inteligencia y habilidades de tiro.';
-            } else if (character === 'Yoruichi') {
-                characterName.innerText = 'Yoruichi Shihouin';
-                characterImage.src = 'img/yoruichi.jpg'; // Asegúrate de que la ruta de la imagen sea correcta
-                characterDescription.innerText = 'Una ex-capitana de la 2ª División, experta en artes marciales y velocidad.';
-            } else if (character === 'Aizen') {
-                characterName.innerText = 'Sosuke Aizen';
-                characterImage.src = 'img/aizen.jpg'; // Asegúrate de que la ruta de la imagen sea correcta
-                characterDescription.innerText = 'El principal antagonista de la serie, conocido por su astucia y poder.';
-            }
+    <div class="gradient">
+        <div class="subscription">
+            <h2 class="subscription__title">Suscríbete para Recibir Novedades</h2>
+            <p class="subscription__description">
+                Mantente al día con nuestras últimas lecciones y recursos exclusivos directamente en tu correo.
+            </p>
+            <form class="subscription__form">
+                <input type="email" class="subscription__input" placeholder="Ingresa tu email" required>
+                <button type="submit" class="subscription__button">Suscribirse</button>
+            </form>
+        </div>
 
-            cardView.style.display = 'block'; // Mostrar el CardView
+        <footer class="footer">
+            <div class="footer-links">
+                <div class="footer__branding">
+                    <p class="footer__brand-name">Bleach Universe</p>
+                </div>
+
+            
+
+            <p class="footer__copyright">2025 © Bleach Universe</p>
+        </footer>
+    </div>
+</div>
+<audio id="audio" src="SpotifyMate.com - wutiwant - SLOWD - saraunh0ly.mp3" preload="auto" loop></audio>
+
+<button id="startButton" style="visibility: hidden;">Ir a AMVs y Videos</button>
+<button id="infoButton" style="visibility: hidden;">Ir a Personajes</button>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const audio = document.getElementById('audio');
+        const startButton = document.getElementById('startButton');
+        const infoButton = document.getElementById('infoButton');
+
+        // Cargar la posición guardada
+        const savedTime = localStorage.getItem('audioTime');
+        if (savedTime) {
+            audio.currentTime = parseFloat(savedTime); // Reproducir desde la última posición guardada
         }
-    </script>
 
+        // Función para reproducir el audio
+        function playAudio() {
+            audio.volume = 1.0; // Asegurar volumen alto
+            audio.muted = false; // Asegurar que no esté en mute
+
+            audio.play().then(() => {
+                console.log("🔊 Audio reproduciéndose correctamente.");
+            }).catch(error => {
+                console.warn("⚠️ Error al reproducir el audio:", error);
+            });
+        }
+
+        // Reproducir el audio cuando se carga la página
+        audio.play().then(() => {
+            document.title = "🔊 Reproduciendo Audio"; // Cambiar título al inicio del audio
+        });
+
+        // Guardar la posición actual al pausar o cerrar la pestaña
+        audio.addEventListener('timeupdate', () => {
+            localStorage.setItem('audioTime', audio.currentTime);
+        });
+
+        // Limpiar la posición guardada si el audio termina
+        audio.addEventListener('ended', () => {
+            localStorage.removeItem('audioTime');
+        });
+
+        // Función para alternar entre silenciar y no silenciar cuando la pestaña cambia de visibilidad
+        function handleVisibilityChange() {
+            if (document.hidden) {
+                // Cuando la pestaña está oculta, pausamos el audio
+                audio.pause();
+            } else {
+                // Cuando la pestaña vuelve a estar visible, reproducir el audio si no está en mute
+                if (!audio.muted) {
+                    audio.play();
+                }
+            }
+        }
+
+        // Detectar cuando la pestaña pierde o gana visibilidad
+        document.addEventListener("visibilitychange", handleVisibilityChange);
+    });
+
+    function showCharacter(character) {
+        // Aquí puedes implementar la lógica para mostrar más información sobre el personaje seleccionado
+        alert("Mostrando información sobre: " + character);
+    }
+</script>
+
+<script src="script.js"></script>
 </body>
 </html>
+
+
 
